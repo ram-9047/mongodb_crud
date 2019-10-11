@@ -65,8 +65,9 @@ l1. Create a database named `blog`.
 
 11. Increment an auhtor's age by 5.  
 
-  db.articles.update({title:"a"},{$set:{"author.age":28}})
+  <!-- db.articles.update({title:"a"},{$set:{"author.age":28}}) -->
+  db.articles.update({title:"a"},{$inc:{"author.age":5}})
 
 12. Delete a document using _id field with `db.COLLECTION_NAME.remove()`.
 
-  
+
